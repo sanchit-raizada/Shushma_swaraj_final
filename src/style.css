@@ -1,0 +1,351 @@
+@import "tailwindcss";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
+
+
+@theme {
+  --color-primary: #162F6A;
+  --color-secondary: #ffffff;
+  --color-dark-primary: black;
+  --color-dark-headings: #2155af;
+  --color-dark-links: #E5E7EB;
+
+}
+
+body {
+
+  transition: background-color 1s ease, color 0.8s ease;
+}
+
+
+/* global css */
+#mega-menu {
+  margin-top: 18px;
+}
+
+;
+
+.swiper-slide {
+  transition: all 0.3s ease;
+}
+
+.swiper-slide-active {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.cursor-core {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s;
+  z-index: 10000;
+}
+
+.cursor-ring {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease-out;
+  z-index: 9999;
+}
+
+/* Hover effects */
+.hover-effect:hover~#custom-cursor .cursor-core {
+  width: 20px;
+  height: 20px;
+  background: #3b82f6;
+}
+
+.hover-effect:hover~#custom-cursor .cursor-ring {
+  width: 60px;
+  height: 60px;
+  border-color: #3b82f6;
+  border-width: 1px;
+}
+
+/* Button hover effects */
+button:hover~#custom-cursor .cursor-ring,
+a:hover~#custom-cursor .cursor-ring {
+  width: 50px;
+  height: 50px;
+  background: rgba(16, 185, 129, 0.1);
+}
+
+/* Hide default cursor */
+body {
+  cursor: none;
+}
+
+/* Ensure cursor is visible on all elements */
+* {
+  cursor: none !important;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.marquee-container {
+  padding: 1.3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 2rem;
+}
+
+.marquee-item {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  filter: grayscale(100%) brightness(80%);
+  transition: all 0.4s;
+  cursor: pointer;
+  position: relative;
+  border: 3px solid transparent;
+}
+
+.marquee-item:hover {
+  filter: grayscale(0%) brightness(100%);
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.marquee-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.marquee-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 1.5rem 1rem 1rem;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.marquee-item:hover .marquee-content {
+  transform: translateY(0);
+}
+
+.title-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.marquee-item:hover .title-overlay {
+  opacity: 1;
+}
+
+
+/* Preloader Styles - Inline to avoid FOUC */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+.preloader-content {
+  text-align: center;
+  color: white;
+}
+
+.preloader-logo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  background: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s infinite ease-in-out;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+}
+
+.preloader-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.preloader-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.preloader-progress {
+  width: 200px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.preloader-progress-bar {
+  height: 100%;
+  background: white;
+  border-radius: 10px;
+  animation: loading 2s ease-in-out infinite;
+}
+
+.preloader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Hide content initially */
+#main-content {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.content-loaded #main-content {
+  opacity: 1;
+}
+
+.social-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+  z-index: 1000;
+}
+
+/* The main floating button */
+.main-btn {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.main-btn:hover {
+
+  transform: scale(1.2);
+}
+
+/* Hidden social icons */
+.social-links {
+  display: flex;
+  overflow: hidden;
+  max-width: 0;
+  opacity: 0;
+  transition: all 0.4s ease;
+  margin-right: 10px;
+}
+
+.social-container.open .social-links {
+  max-width: 400px;
+  /* enough for your icons */
+  opacity: 1;
+}
+
+.social-links a {
+  color: #333;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  background: #eee;
+}
