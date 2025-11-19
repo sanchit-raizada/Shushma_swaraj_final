@@ -1,6 +1,10 @@
 @import "tailwindcss";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
 @import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
 
+
+
+@import "@fortawesome/fontawesome-free/css/all.css";
 
 @theme {
   --color-primary: #162F6A;

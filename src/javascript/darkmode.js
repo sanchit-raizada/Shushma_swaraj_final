@@ -2,17 +2,17 @@ export function initNightMode() {
     const themeToggle = document.getElementById("theme-toggle");
     const themeIcon = document.getElementById("theme-icon");
 
-    // Initial setup
-    if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-            window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
+    // Initial setup - DEFAULT LIGHT MODE
+    if (localStorage.theme === "dark") {
+        // Only apply dark mode if explicitly set in localStorage
         document.documentElement.classList.add("dark");
         themeIcon.classList.replace("fa-moon", "fa-sun");
     } else {
+        // Default: light mode (remove dark class and set moon icon)
         document.documentElement.classList.remove("dark");
         themeIcon.classList.replace("fa-sun", "fa-moon");
+        // Ensure theme is set to light in localStorage
+        localStorage.theme = "light";
     }
 
     // Toggle handler
@@ -28,7 +28,4 @@ export function initNightMode() {
             themeIcon.classList.replace("fa-sun", "fa-moon");
         }
     });
-
 }
-
-
