@@ -1,0 +1,196 @@
+  <header id="header" class="header mx-7xl relative">
+    <div class="w-full max-w-7xl mx-auto relative">
+      <div class="top-row flex items-center justify-between py-2">
+        <a href="index.html" class="logo flex items-end">
+          <h1 class="sitename">Blogy</h1><span>.</span>
+        </a>
+        <div class="flex items-center gap-7">
+          <!-- Social icons -->
+          <div class="flex items-center gap-4">
+            <a href="http://www.facebook.com/FSI.MEA.NEWDELHI/" target="_blank"
+              class="text-gray-700 hover:text-primary">
+              <i class="fab fa-facebook text-xl"></i>
+            </a>
+            <a href="http://www.twitter.com/SSIFS_MEA" target="_blank" class="text-gray-700 hover:text-primary">
+              <i class="fab fa-twitter text-xl"></i>
+            </a>
+          </div>
+          <!-- Search -->
+          <form class="hidden xl:flex items-center border-2 border-primary rounded-full overflow-hidden h-10 bg-white">
+            <input type="text" placeholder="Search..." class="px-4 text-sm w-48 outline-none border-none" />
+            <button type="submit" class="bg-primary text-white px-4 h-full">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+          <button id="mobile-nav-toggle" class="lg:hidden text-3xl text-black focus:outline-none">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- NAVWRAP -->
+    <div class="nav-wrap flex justify-center mt-2">
+      <div class="w-full max-w-7xl flex justify-center relative">
+
+        <nav id="navmenu" class="navmenu">
+
+          <ul class="hidden xl:flex">
+            <li><a href="index.html" class="active">Home</a></li>
+
+            <li class="dropdown">
+              <a href="#" class=" flex items-center">
+                <span>About Institute</span>
+                <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+              </a>
+
+              <ul class="dropdown-active">
+                <li><a href="">
+                    Brief on SSIFS</a></li>
+                <li><a href="">
+                    Organogram</a></li>
+                <li><a href="">
+                    Former Deans</a></li>
+                <li><a href="">
+                    Contact Details</a></li>
+                <li><a href="">
+                    Visiting Faculty and Partner Institutions of SSIFS</a></li>
+                <li><a href="">
+                    Infrastructure</a></li>
+                <li><a href="">
+                    Residential Life</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class=" flex items-center">
+                <span>Training Programs</span>
+                <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+              </a>
+
+              <ul class="dropdown-active">
+
+                <li class="dropdown">
+                  <a href="#" class=" flex items-center">
+                    <span>
+                      Training for Indian Officials</span>
+                    <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+                  </a>
+
+                  <ul class="dropdown-active">
+                    <li><a href="#">
+                        ITP for IFS OTs</a></li>
+                    <li><a href="#">
+                        MCTP I</a></li>
+                    <li><a href="#">
+                        MCTP II</a></li>
+                    <li><a href="#">
+                        MCTP III</a></li>
+                    <li><a href="#">
+                        Training Program for IFS B</a></li>
+                    <li><a href="#">
+                        Training Program for Grade I of IFS B</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class=" flex items-center">
+                    <span>Training for Foreign Diplomats</span>
+                    <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+                  </a>
+
+                  <ul class="dropdown-active">
+                    <li><a href="#">
+                        Familiarization Programs For Resident HoMs and Diplomats</a></li>
+                    <li><a href="#">
+                        Professional Course for Foreign Diplomats PCFD</a></li>
+                    <li><a href="#">
+                        Global South</a></li>
+                    <li><a href="#">
+                        Annual DISA Fellowship</a></li>
+                    <li><a href="#">
+                        Special Courses for Partner Countries</a></li>
+                    <li><a href="#">
+                        Past Special Programs for ASEAN and ASEM Diplomats</a></li>
+
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class=" flex items-center">
+                <span>Institutional Cooperation</span>
+                <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+              </a>
+
+              <ul class="dropdown-active">
+                <li><a href="">
+
+                    Memorandum of Understanding</a></li>
+
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="flex items-center">
+                <span>Hall of Honor</span>
+                <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+              </a>
+
+              <ul class="dropdown-active">
+                <li><a href="">
+
+                    EAM's Gold Medal Best Officer Trainee</a></li>
+                <li><a href="">
+
+                    MoS Silver Medal for Esprit de Corps</a></li>
+                <li><a href="">
+
+                    Amb. Bimal Sanyal Memorial Medal for Best Dissertation</a></li>
+                <li><a href="">
+
+                    Other Prizes</a></li>
+
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class=" flex items-center">
+                <span>Newsletter</span>
+                <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+              </a>
+
+              <ul class="dropdown-active">
+                <li><a href="">
+                    Videsh Sewa Magazine</a></li>
+              </ul>
+            </li>
+
+            <li><a href="index.html" class="">RTI</a></li>
+
+            <li class="dropdown">
+              <a href="#" class=" flex items-center">
+                <span>
+                  Useful Links
+                </span>
+                <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+              </a>
+
+              <ul class="dropdown-active">
+                <li><a href="">
+
+                    the president of india</a></li>
+                <li><a href="">
+                    The Prime Minister of India</a></li>
+                <li><a href="">
+                    Ministry of External Affairs</a></li>
+                <li><a href="">
+                    Internship Opportunities</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Tenders</a></li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  <!-- </header> -->
