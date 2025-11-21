@@ -1,0 +1,645 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushma Swaraj Institute of foreign Institute</title>
+  <link rel="stylesheet" crossorigin href="src/style.css">
+  <script src="./src/main.js" type="module" defer>
+
+  </script>
+</head>
+
+<body class="dark:bg-dark-primary">
+
+  <!-- ============================================Header ========================================================================================= -->
+  <header id="header" class="header w-full h-auto  fixed top-0 mx-7xl z-50 bg-secondary dark:bg-dark-primary">
+
+    <div class="topbar flex justify-center items-center">
+      <div id="topbar-wrapper" class="flex flex-col items-center gapY-2 lg:flex-row lg:justify-between px-0 lg:px-8">
+        <div class="topbar-left">
+          <a href="#">Sitemap</a>
+          <span>|</span>
+          <a href="#">Contact Us</a>
+          <span>|</span>
+          <a href="#">E-Office</a>
+        </div>
+        <div class="topbar-right">
+          <span id="currentTime">Fri, November 21, 2025 at 12:28:14 PM IST</span>
+          <span class="text-white">|</span>
+          <img src="https://flagcdn.com/w20/in.png" alt="India Flag" class="flag">
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8  relative">
+      <div class="top-row flex items-center justify-between py-2">
+        <a href="index.html" class="logo flex items-end">
+          <img src="/src/assets/logo0013.jpg" alt="website's logo">
+        </a>
+        <div class="flex items-center gap-7">
+
+          <div class="flex gap-3">
+            <!-- Social icons -->
+            <div class="items-center gap-4" id="social-bar" style="display: none;">
+              <div class="flex items-center gap-4 ">
+                <!-- Facebook -->
+                <a href="http://www.facebook.com/FSI.MEA.NEWDELHI/" target="_blank"
+                  class="text-gray-700 hover:text-primary">
+                  <i class="fab fa-facebook text-xl"></i>
+                </a>
+
+                <!-- Twitter X -->
+                <a href="http://www.twitter.com/SSIFS_MEA" target="_blank" class="text-gray-700 hover:text-primary">
+                  <i class="fa-brands fa-x-twitter text-xl"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com" target="_blank" class="text-gray-700 hover:text-primary">
+                  <i class="fab fa-instagram text-xl"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com" target="_blank" class="text-gray-700 hover:text-primary">
+                  <i class="fab fa-linkedin text-xl"></i>
+                </a>
+              </div>
+
+            </div>
+            <!-- Search -->
+            <form
+              class="hidden xl:flex items-center border-2 border-primary rounded-full overflow-hidden h-10 bg-white">
+              <input type="text" placeholder="Search..." class="px-4 text-sm w-48 outline-none border-none" />
+              <button type="submit" class="bg-primary text-white px-4 h-full">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div>
+            <button id="mobile-nav-toggle" class="lg:hidden text-3xl text-black focus:outline-none ">
+              <i class="fa fa-bars "></i>
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- secondary navwrapper -->
+    <div class="nav-wrap flex justify-center mt-2">
+      <div class="w-full max-w-7xl flex justify-center relative">
+        <nav id="navmenu" class="navmenu">
+          <ul class="hidden xl:flex">
+            <li class="flex items-center justify-between pr-4">
+              <a href="index.html" class="active">Home</a>
+              <button id="mobile-nav-toggle-cross"
+                class="lg:hidden text-xl bg-gray-300 text-black/80 p-2 py-3 hover:bg-primary  hover:text-white rounded-full focus:outline-none ">
+                <i class="fa fa-times "></i>
+              </button>
+            </li>
+            <li class="dropdown">
+              <a href="about-us.html" class=" flex items-center">
+                <span>About Institute</span>
+                <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+              </a>
+
+              <ul class="dropdown-active">
+                <li><a href="about-us.html">
+                    Brief on SSIFS</a></li>
+                <li><a href="">
+                    Organogram</a></li>
+                <li><a href="">
+                    Former Deans</a></li>
+                <li><a href="">
+                    Contact Details</a></li>
+                <li><a href="">
+                    Visiting Faculty and Partner Institutions of SSIFS</a></li>
+                <li><a href="">
+                    Infrastructure</a></li>
+                <li><a href="">
+                    Residential Life</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class=" flex items-center">
+                <span>Training Programs</span>
+                <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+              </a>
+
+              <ul class="dropdown-active">
+
+                <li class="dropdown">
+                  <a href="#" class=" flex items-center">
+                    <span>
+                      Training for Indian Officials</span>
+                    <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+                  </a>
+
+                  <ul class="dropdown-active">
+                    <li><a href="#">
+                        ITP for IFS OTs</a></li>
+                    <li><a href="#">
+                        MCTP I</a></li>
+                    <li><a href="#">
+                        MCTP II</a></li>
+                    <li><a href="#">
+                        MCTP III</a></li>
+                    <li><a href="#">
+                        Training Program for IFS B</a></li>
+                    <li><a href="#">
+                        Training Program for Grade I of IFS B</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class=" flex items-center">
+                    <span>Training for Foreign Diplomats</span>
+                    <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+                  </a>
+
+                  <ul class="dropdown-active">
+                    <li><a href="#">
+                        Familiarization Programs For Resident HoMs and Diplomats</a></li>
+                    <li><a href="#">
+                        Professional Course for Foreign Diplomats PCFD</a></li>
+                    <li><a href="#">
+                        Global South</a></li>
+                    <li><a href="#">
+                        Annual DISA Fellowship</a></li>
+                    <li><a href="#">
+                        Special Courses for Partner Countries</a></li>
+                    <li><a href="#">
+                        Past Special Programs for ASEAN and ASEM Diplomats</a></li>
+
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class=" flex items-center">
+                <span>Institutional Cooperation</span>
+                <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+              </a>
+
+              <ul class="dropdown-active">
+                <li><a href="">
+
+                    Memorandum of Understanding</a></li>
+
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="flex items-center">
+                <span>Hall of Honor</span>
+                <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+              </a>
+
+              <ul class="dropdown-active">
+                <li><a href="">
+
+                    EAM's Gold Medal Best Officer Trainee</a></li>
+                <li><a href="">
+
+                    MoS Silver Medal for Esprit de Corps</a></li>
+                <li><a href="">
+
+                    Amb. Bimal Sanyal Memorial Medal for Best Dissertation</a></li>
+                <li><a href="">
+
+                    Other Prizes</a></li>
+
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class=" flex items-center">
+                <span>Newsletter</span>
+                <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+              </a>
+
+              <ul class="dropdown-active">
+                <li><a href="">
+                    Videsh Sewa Magazine</a></li>
+              </ul>
+            </li>
+
+            <li><a href="index.html" class="">RTI</a></li>
+
+            <li class="dropdown">
+              <a href="#" class=" flex items-center">
+                <span>
+                  Useful Links
+                </span>
+                <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
+              </a>
+
+              <ul class="dropdown-active">
+                <li><a href="">
+
+                    the president of india</a></li>
+                <li><a href="">
+                    The Prime Minister of India</a></li>
+                <li><a href="">
+                    Ministry of External Affairs</a></li>
+                <li><a href="">
+                    Internship Opportunities</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Tenders</a></li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+  <!-- ==========  HERO / PAGE TITLE  ========== -->
+  <section class="relative pt-60  bg-primary text-white py-20 breadcrump-area bg-cover bg-center bg-no-repeat">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-extrabold fs-36 ">About Institute</h2>
+      <nav class="text-sm opacity-80">
+        <a href="/" class="hover:underline ">Home</a> <span class="mx-2">/</span>
+        <span>About Institute</span>
+      </nav>
+    </div>
+  </section>
+
+
+  <!-- ==========  MAIN CONTENT  ========== -->
+  <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-6 gap-8">
+      <aside class="lg:col-span-2 about-page-aside">
+        <div class="bg-theme-color   rounded-2xl shadow-lg border border-white/20 dark:bg-dark-primary p-8">
+          <!-- <h3 class="text-xl font-bold mb-6 text-white dark:text-white">About Institute</h3> -->
+          <ul class="space-y-4 text-base about-page-sidebar">
+            <li><a href="/former-deans"
+                class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition border-b border-transparent hover:border-blue-400 pb-1">Former
+                Deans</a></li>
+            <li><a href="/brief-on-ssifs"
+                class="block text-blue-600 dark:text-blue-400 font-semibold border-b border-blue-400 pb-1">Brief
+                on SSIFS</a></li>
+            <li><a href="/organogram"
+                class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition border-b border-transparent hover:border-blue-400 pb-1">Organogram</a>
+            </li>
+            <li><a href="/contact-details"
+                class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition border-b border-transparent hover:border-blue-400 pb-1">Contact
+                Details</a></li>
+            <li><a href="/visiting-faculty-at-ssifs"
+                class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition border-b border-transparent hover:border-blue-400 pb-1">Visiting
+                Faculty and Partner Institutions of SSIFS</a></li>
+            <li><a href="/infrastructure"
+                class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition border-b border-transparent hover:border-blue-400 pb-1">Infrastructure</a>
+            </li>
+            <li><a href="/residential-life"
+                class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition border-b border-transparent hover:border-blue-400 pb-1">Residential
+                Life</a></li>
+            <li><a href="/"
+                class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition border-b border-transparent hover:border-blue-400 pb-1">←
+                Back</a></li>
+          </ul>
+        </div>
+      </aside>
+      <!-- ==========  MAIN  (extra wide + modern)  ========== -->
+      <main class="lg:col-span-4 space-y-10">
+        <div
+          class="bg-white dark:bg-dark-primary rounded-2xl shadow-xl p-8 border border-white/20 dark:border-gray-700">
+          <h2 class="text-4xl font-extrabold mb-6 text-gray-800 dark:text-white">Sushma Swaraj Institute of
+            Foreign Service</h2>
+          <img src="https://ssifs.mea.gov.in/public/uploads/content/1732760165.jpg" alt="SSIFS"
+            class="w-full rounded-xl mb-6 shadow-md" />
+          <p class="text-gray-700 dark:text-gray-300 text-justify leading-relaxed text-lg">
+            Sushma Swaraj Institute of Foreign Service (SSIFS) was established in 1986 by the Ministry of
+            External Affairs, Government of India, primarily to cater to the professional training needs of
+            the Indian Foreign Service (IFS) officers inducted via UPSC every year. Over the years, SSIFS
+            diversified its activities to include Mid-Career Training Programmes at various levels, training
+            programme for First Time Heads of Mission, training programme for Commercial Representatives
+            posted in Indian Missions abroad, training programme for Defence Attaches posted to join our
+            Embassies around the world, orientation courses for deputationists and members of other Civil
+            Services, courses of relevance to non-Representational Grade officials of the Ministry as also
+            the courses for foreign diplomats with an aim to build bridges of friendship and cooperation
+            with countries around the world.
+          </p>
+        </div>
+
+
+      </main>
+    </div>
+    <div class="history-box">
+
+      <!-- GRID ROW -->
+      <div class="history-grid">
+
+        <!-- IMAGE LEFT -->
+        <div class="history-image-wrap">
+          <img src="/src/assets/Sushma-Swaraj.jpg" alt="History" class="history-image">
+        </div>
+
+        <!-- FIRST PARAGRAPH RIGHT -->
+        <div class="history-content">
+          <h3 class="history-title">History of the Institute</h3>
+
+          <p class="history-text">
+            Though Sushma Swaraj Institute of Foreign Service started functioning in 1986, the beginnings of
+            training of Indian Foreign Service officers go back to the October 1946 Cabinet decision which
+            stated that "The special knowledge and the professional skill required of a diplomat can only be
+            acquired through careful training". Initially, the training of the Indian Foreign Service (IFS)
+            officers consisted of a three month preliminary course of lectures in Delhi followed by 18
+            months in foreign universities as students under the general supervision of the Indian
+            representative in the country concerned, which was followed by training for about a year at
+            headquarters in India. A lot of thinking went into assessing the effectiveness of the training
+            curriculum and subsequently, on March 21, 1950 the Foreign Service Board (FSB) of the MEA
+            adopted a new programme of training. It aimed at increasing the knowledge base of probationers
+            in fields such as History, Geography, Economics, Indian Culture, Indian domestic and foreign
+            policy, modern history and politics, and diplomatic practice and procedure; developing their
+            capacity to express clearly and concisely in speech and writing and improving their
+            inter-personal skills.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- SECOND PARAGRAPH FULL WIDTH -->
+      <p class="history-text history-full">
+        It was decided by the FSB that to put the newly-designed curriculum into effect, the probationers would
+        spend the first six months in India, where they would be attached to the Administrative Training School
+        and thereafter undergo a condensed course designed by the Professors of Delhi University. After
+        completion of this training at headquarters, the probationer would be sent to a foreign residential
+        university in the UK or USA for one academic year. The chief objective of the year in the university
+        would be to widen his/her social and mental horizons and not merely the acquisition of academic
+        distinction. During this period the probationer would also pursue his/her study of the foreign language
+        selected. The probationer would then go, for six months, to a country in which the language selected was
+        the common medium of instruction. The probationer would also be attached to the Indian Mission in the
+        country and it would be the duty of such missions to train the probationer in diplomatic practice and
+        procedure so far as was practicable. The probationer would after this period, come back home and would
+        be attached to the foreign office and be given training in diplomatic practices and procedure and inf
+        office routine under the overall supervision of a joint secretary. At the end of six to nine months of
+        this training, an examination would be held to test the knowledge of the probationer and see whether
+        he/she was fit for retention. During the course of implementation of the scheme of training approved by
+        FSB, the subjected on which the knowledge of the probationers was tested were Territorial Work,
+        Protocol, Establishment and Accounts, Passport and Visas and Hindi.
+      </p>
+      <p class="history-text history-full">
+
+
+        In a note recorded on November 5, 1953, the Prime Minister raised the question of the need for IFS
+        probationers being trained in district work. He held that Foreign Service Officers could not function
+        adequately without some intimate knowledge of the Indian scene as well as the background of Indian
+        history and culture. Shri S. Dutt, India's Ambassador to West Germany in a letter dated November, 17,
+        1953 to Shri N R Pillai, Secretary General also noted ignorance shown by some young foreign service
+        officers as regards Indian history, geography and conditions of the common man in an Indian village.
+        With reference to the noting of the PM on district training of IFS probationers, Shri M J Desai,
+        Commonwealth Secretary examined the question of the recruitment and training of IFS probationers, In
+        view of the PM's observation, he wanted the Administration branch to carry out a review other entire
+        training system, in light of the last five years experience. Further, the then Foreign Secretary Shri R
+        K Nehru's note on changes required in IFS probationers training was put before the Prime Minister on
+        March 19, 1954, which pointed out that the present method was based on the principle that specialized
+        training aboard was more important and should have a higher priority than general training in India. The
+        PM agreed that the present system did not appear to be wholly satisfactory and it should certainly be
+        reviewed.
+      </p>
+      <div class="third-img-about">
+        <img src="/src/assets/history.jpg" alt="">
+      </div>
+      <p class="history-text history-full">
+        In the meantime, MEA took steps to obtain the Cabinet's approval for the proposal for the district
+        training of the 1951 batch of the IFS probationers and arrangements were made to send the probationers
+        to the states after consulting the state governments. The Ministry of External Affairs further decided
+        that the probationers of the 1952 and 1953 batches would undergo district training after completion of
+        all other training. But, for the 1954 batch, the Ministry held that with effect from that batch, the
+        district training in India would come before any other training. Finally, in 1956, a revised programme
+        for the training of IFS probationers was carved out. It included six months of training at the IAS
+        training school on subjects such as Constitution of India., public administration, political theory,
+        Indian history, economic theory with special reference to planning in India, Hindi, riding and motor
+        driving. The revised programme further included four months of district training in which the
+        probationer would be expected to gain some experience of the administrative machinery and a firsthand
+        knowledge of the people in the villages. The district training would be followed by Secretariat training
+        in the Ministry of External Affairs for around five and a half months which would include training in
+        accounts; audit and treasury; administration (establishment and personnel); territorial, passport and
+        visa regulations; study of compulsory foreign language and Hindi. This secretariat training was to be
+        followed by training in a residential university abroad for nine months where the academic course would
+        comprise a term in the subject of Diplomatic History and World History; another term in International
+        Law and a third in Economics, following which the probationers would be sent for Departmental Training
+        in External Relations and, Commerce and Trade in an Indian Mission. The last course in probation would
+        be a British Foreign Service Course for Foreign Service Officers of the Commonwealth countries for one
+        and a half months. In 1959, the attachment to the universities abroad was given up and a new programme
+        for the training of IFS probationers was charted out. The new programme included a course at the IAS
+        training school for six to eight months; district training for three for two or three months; a
+        reorientation course for 2 weeks at Delhi during which the probationers were sent to the School of
+        International Studies which was to be the substitute for the university course abroad. This was followed
+        by postings abroad as third secretaries which were also considered as part training.
+      </p>
+
+      <p class="history-text history-full">
+
+
+        The question of training was again under examination in 1961. The modified training schedule included
+        six months at the National Academy of Administration, followed by 15 days of Bharat Darshan. After this
+        the probationers were sent for District Training for three months followed by an attachment with the
+        Ministry for three months. This was followed by a three month attachment with the School of
+        International Studies after which the probationers were sent for their language postings abroad. This
+        programme was followed for all batches till 1964. The Pillai Committee Report (1966) on the Indian
+        Foreign Service devoted a whole chapter in its report on training. Most of the recommendations of the
+        Pillai Committee were accepted following which the training programme for the 1965 batch was modified.
+        The new programme included four months at the National academy of Administration for the Foundation
+        Course; a four month attachment with the School of International Studies; district attachment for six
+        months; six months at the Ministry followed by Army Attachment and Bharat Darshan. Post that, the IFS
+        probationers were sent for language postings abroad. The current programme was revised with minor
+        changes based on feedback for IFS probationers in 1968. Subsequently, the probationers were also
+        attached to the Ministry of Foreign Trade and Supply and the Indian Institute of Foreign Trade for
+        practical training. In the 1970s the attachment to the Ministry of Foreign Trade was increased from one
+        week to six weeks. Together with six weeks' training at the Indian Institute of Foreign Trade, the
+        training in the commercial field was increased to a total period of three months. The probationers were
+        also sent to Indian Council of Cultural Relations (ICCR) for a period of six days, to get acquainted
+        with the work relating to cultural affairs. In 1977, the District attachment of the IFS probationers was
+        subjected to scrutiny, and detailed guidelines were formulated which induced 18 weeks for training in
+        the district and two weeks in the state capital.
+      </p>
+
+      <p class="history-text history-full">
+
+
+        The 1980s started with a renewed focus on the training of Foreign Service Probationers. In 1980, the
+        training programme was again reviewed and the period of training in India was reduced drastically from
+        about 2 years to less than one and a half years. The new training scheme was first implemented with the
+        1981 batch whose training programme in India was for 14 months only. The newly recruited batch of the
+        IFS officers attended a brief three day orientation in the Ministry before attending the Foundation
+        Course at the national Academy of Administration at Mussoorie. They were put through short but intensive
+        courses at the Indian Institute of Foreign Trade (six weeks), Indian Institute of Mass Communication
+        (two weeks), School of International Studies, JNU, Bureau of Parliamentary Studies and Training (one
+        week), in addition to undergoing attachment with the functional divisions within the Ministry of
+        External Affairs (Administration, Accounts, Protocol, Passport and Visa etc.) and Territorial divisions
+        for a period of 10 weeks. The institutionalized training was further supplemented with talks by senior
+        officers of the Ministry on subjects covering the entire gamut of India's Foreign Policy and related
+        aspects. The training also included Bharat Darshan and an attachment with ICCR. In 1982 the revised
+        training schedule was further shortened to 11 months.
+      </p>
+    </div>
+
+
+
+  </section>
+
+
+
+  <footer class="bg-primary dark:bg-dark-headings text-white">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+
+      <!-- 🔹 COLUMN 1: Image + About -->
+      <div>
+        <img src="/src/assets/White-Logo.png " alt="Institute Logo" class="w-32 mb-4">
+        <p class="text-sm text-gray-300 dark:text-secondary leading-relaxed">
+          Sushma Swaraj Institute of Foreign Service (SSIFS) was established in 1986 by the Ministry of External Affairs
+        </p>
+      </div>
+
+      <!-- 🔹 COLUMN 2: Left Menu Group -->
+      <div style="margin-left: 50px;">
+        <h3 class="text-lg font-semibold mb-4">About Institute</h3>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="#" class="hover:text-blue-300 transition">About Institute</a></li>
+          <li><a href="#" class="hover:text-blue-300 transition">Training Programs</a></li>
+          <li><a href="#" class="hover:text-blue-300 transition">Institutional Cooperation</a></li>
+          <li><a href="#" class="hover:text-blue-300 transition">Hall of Honor</a></li>
+        </ul>
+      </div>
+
+      <!-- 🔹 COLUMN 3: Right Menu Group -->
+      <div style="margin-left: 50px; margin-top: 40px;">
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="#" class="hover:text-blue-300 transition">Newsletter</a></li>
+          <li><a href="#" class="hover:text-blue-300 transition">RTI</a></li>
+          <li><a href="#" class="hover:text-blue-300 transition">Useful Links</a></li>
+          <li><a href="#" class="hover:text-blue-300 transition">Tenders</a></li>
+        </ul>
+      </div>
+
+      <!-- 🔹 COLUMN 4: Contact Details -->
+      <div style="margin-left: 50px;">
+        <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+
+        <ul class="space-y-3 text-sm text-gray-300">
+
+          <!-- ADDRESS -->
+          <li class="flex gap-4 items-center">
+            <i class="fa-solid fa-location-dot text-white text-lg"></i>
+            <a href="#" target="_blank" class="hover:text-blue-300 transition">
+              Baba Gang Nath Marg,<br>
+              Old JNU Campus,<br>
+              New Delhi - 110067 India
+            </a>
+          </li>
+
+          <!-- PHONE NUMBERS -->
+          <li class="flex gap-4 items-center">
+            <i class="fa-solid fa-phone text-white text-lg"></i>
+            <span class="flex flex-col">
+              <a href="tel:26181280" class="hover:text-blue-300 transition">26181280</a>
+            </span>
+          </li>
+
+          <!-- EMAIL -->
+          <li class="flex gap-4 items-center">
+            <i class="fa-solid fa-envelope text-white text-lg"></i>
+            <a href="mailto:deanfsi@mea.gov.in" class="hover:text-blue-300 transition">
+              deanfsi@mea.gov.in
+            </a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <!-- 🔹 Footer Bottom -->
+    <div class="border-t border-blue-800 mt-10 pt-6 text-center md:text-left text-sm text-gray-300 dark:text-secondary">
+
+      <div class="max-w-7xl mx-auto px-6 flex lg:flex-row md:flex-row flex-col justify-between items-center gap-2">
+
+        <!-- LEFT -->
+        <span>
+          Website last updated on: <strong>05 November, 2025</strong>
+        </span>
+
+        <!-- RIGHT -->
+        <span>
+          Visitors: <strong>435866</strong>
+        </span>
+
+      </div>
+
+      <!-- COPYRIGHT (centered always) -->
+      <div class="border-t border-blue-800  pt-6 text-center md:text-left text-sm text-gray-300 dark:text-secondary"
+        style="margin-top: 20px;">
+        <div class="max-w-7xl mx-auto px-6    text-right gap-2">
+
+
+
+          <!-- RIGHT -->
+          <span>
+            © Content Owned by Sushma Swaraj Institute of Foreign Service
+          </span>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <button id="scrollTopBtn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+
+  <div id="custom-cursor" class="hidden md:block">
+    <div class="cursor-core"></div>
+    <div class="cursor-ring"></div>
+  </div>
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const options = {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        timeZone: 'Asia/Kolkata'
+      };
+      document.getElementById("currentTime").textContent =
+        now.toLocaleString("en-US", options) + " IST";
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime();
+  </script>
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        scrollBtn.classList.add("show");
+      } else {
+        scrollBtn.classList.remove("show");
+      }
+    });
+
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+
+
+</body>
+
+</html>

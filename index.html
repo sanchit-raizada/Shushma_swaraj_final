@@ -19,53 +19,98 @@
 
 <body class="bg-secondary dark:bg-dark-primary">
   <!-- ============================================Header ========================================================================================= -->
-  <header id="header" class="header mx-7xl relative">
-    <div class="w-full max-w-7xl mx-auto relative">
-      <div class="top-row flex items-center justify-between py-2">
-        <a href="index.html" class="logo flex items-end">
-          <h1 class="sitename">Blogy</h1><span>.</span>
-        </a>
-        <div class="flex items-center gap-7">
-          <!-- Social icons -->
-          <div class="flex items-center gap-4">
-            <a href="http://www.facebook.com/FSI.MEA.NEWDELHI/" target="_blank"
-              class="text-gray-700 hover:text-primary">
-              <i class="fab fa-facebook text-xl"></i>
-            </a>
-            <a href="http://www.twitter.com/SSIFS_MEA" target="_blank" class="text-gray-700 hover:text-primary">
-              <i class="fab fa-twitter text-xl"></i>
-            </a>
-          </div>
-          <!-- Search -->
-          <form class="hidden xl:flex items-center border-2 border-primary rounded-full overflow-hidden h-10 bg-white">
-            <input type="text" placeholder="Search..." class="px-4 text-sm w-48 outline-none border-none" />
-            <button type="submit" class="bg-primary text-white px-4 h-full">
-              <i class="fa fa-search"></i>
-            </button>
-          </form>
-          <button id="mobile-nav-toggle" class="lg:hidden text-3xl text-black focus:outline-none ">
-            <i class="fa fa-bars "></i>
-          </button>
+  <header id="header" class="header w-full h-auto  fixed top-0 mx-7xl z-50 bg-secondary dark:bg-dark-primary">
+
+    <div class="topbar flex justify-center items-center">
+      <div id="topbar-wrapper" class="flex flex-col items-center gapY-2 lg:flex-row lg:justify-between px-0 lg:px-8">
+        <div class="topbar-left">
+          <a href="#">Sitemap</a>
+          <span>|</span>
+          <a href="#">Contact Us</a>
+          <span>|</span>
+          <a href="#">E-Office</a>
+        </div>
+        <div class="topbar-right">
+          <span id="currentTime">Fri, November 21, 2025 at 12:28:14 PM IST</span>
+          <span class="text-white">|</span>
+          <img src="https://flagcdn.com/w20/in.png" alt="India Flag" class="flag">
         </div>
       </div>
     </div>
-    <!-- NAVWRAP -->
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8  relative">
+      <div class="top-row flex items-center justify-between py-2">
+        <a href="index.html" class="logo flex items-end">
+          <img src="/src/assets/logo0013.jpg" alt="website's logo">
+        </a>
+        <div class="flex items-center gap-7">
+
+          <div class="flex gap-3">
+            <!-- Social icons -->
+            <div class="items-center gap-4" id="social-bar" style="display: none;">
+              <div class="flex items-center gap-4 ">
+                <!-- Facebook -->
+                <a href="http://www.facebook.com/FSI.MEA.NEWDELHI/" target="_blank"
+                  class="text-gray-700 hover:text-primary">
+                  <i class="fab fa-facebook text-xl"></i>
+                </a>
+
+                <!-- Twitter X -->
+                <a href="http://www.twitter.com/SSIFS_MEA" target="_blank" class="text-gray-700 hover:text-primary">
+                  <i class="fa-brands fa-x-twitter text-xl"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com" target="_blank" class="text-gray-700 hover:text-primary">
+                  <i class="fab fa-instagram text-xl"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com" target="_blank" class="text-gray-700 hover:text-primary">
+                  <i class="fab fa-linkedin text-xl"></i>
+                </a>
+              </div>
+
+            </div>
+            <!-- Search -->
+            <form
+              class="hidden xl:flex items-center border-2 border-primary rounded-full overflow-hidden h-10 bg-white">
+              <input type="text" placeholder="Search..." class="px-4 text-sm w-48 outline-none border-none" />
+              <button type="submit" class="bg-primary text-white px-4 h-full">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div>
+            <button id="mobile-nav-toggle" class="lg:hidden text-3xl text-black focus:outline-none ">
+              <i class="fa fa-bars "></i>
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- secondary navwrapper -->
     <div class="nav-wrap flex justify-center mt-2">
       <div class="w-full max-w-7xl flex justify-center relative">
-
         <nav id="navmenu" class="navmenu">
-
           <ul class="hidden xl:flex">
-            <li><a href="index.html" class="active">Home</a></li>
-
+            <li class="flex items-center justify-between pr-4">
+              <a href="index.html" class="active">Home</a>
+              <button id="mobile-nav-toggle-cross" class="lg:hidden text-xl bg-gray-300 text-black/80 p-2 py-3 hover:bg-primary  hover:text-white rounded-full focus:outline-none ">
+                <i class="fa fa-times "></i>
+              </button>
+            </li>
             <li class="dropdown">
-              <a href="#" class=" flex items-center">
+              <a href="about-us.html" class=" flex items-center">
                 <span>About Institute</span>
                 <i class="fa fa-chevron-down toggle-dropdown ml-2"></i>
               </a>
 
               <ul class="dropdown-active">
-                <li><a href="">
+                <li><a href="about-us.html">
                     Brief on SSIFS</a></li>
                 <li><a href="">
                     Organogram</a></li>
@@ -215,14 +260,24 @@
       </div>
     </div>
   </header>
-
   <!-- ============================================Header ========================================================================================= -->
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- ===================================================Hero Section================================================================== -->
-  <main class="bg-secondary dark:bg-dark-primary">
+  <main class="bg-secondary pt-28 dark:bg-dark-primary">
 
     <section class="relative h-[90vh] overflow-hidden">
-      <!-- Institute Info -->
-      <!-- Swiper Container -->
+
       <div class="swiper mySwiper h-full w-full">
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
@@ -359,7 +414,10 @@
         </div>
       </div>
     </section>
-    <!-- About us Section -->
+    <!-- ========================================================================= Hero Section Ended====================================================== -->
+
+
+    <!-- ======================================================================About us Section============================================================= -->
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <section class="about-section py-16 bg-secondary dark:bg-dark-primary">
         <div class="flex flex-col lg:flex-row items-center gap-12">
@@ -494,19 +552,19 @@
           <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div class="text-center p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl">
               <div class="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">105+</div>
-              <div class="text-gray-600 text-xl dark:text-gray-300 font-medium">International MoUs</div>
+              <div class="text-gray-600 text-sm md:text-xl dark:text-gray-300 font-medium">International MoUs</div>
             </div>
             <div class="text-center p-6 bg-green-50 dark:bg-green-900/20 rounded-xl">
               <div class="text-3xl md:text-4xl font-bold text-green-600 dark:text-green-400 mb-2">1000+ </div>
-              <div class="text-gray-600 text-xl dark:text-gray-300 font-medium">Diplomat Alumni</div>
+              <div class="text-gray-600 text-sm md:text-xl dark:text-gray-300 font-medium">Diplomat Alumni</div>
             </div>
             <div class="text-center p-6 bg-purple-50 dark:bg-purple-900/20 rounded-xl">
               <div class="text-3xl md:text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">71</div>
-              <div class="text-gray-600 text-xl dark:text-gray-300 font-medium">PCFD Editions</div>
+              <div class="text-gray-600 text-sm md:text-xl dark:text-gray-300 font-medium">PCFD Editions</div>
             </div>
             <div class="text-center p-6 bg-orange-50 dark:bg-orange-900/20 rounded-xl">
               <div class="text-3xl md:text-4xl font-bold text-orange-600 dark:text-orange-400 mb-2">39+</div>
-              <div class="text-gray-600 text-xl dark:text-gray-300 font-medium">Years of Excellence</div>
+              <div class="text-gray-600 text-sm md:text-xl dark:text-gray-300 font-medium">Years of Excellence</div>
             </div>
           </div>
         </div>
@@ -560,6 +618,19 @@
                   <p class="text-sm text-primary mt-1 dark:text-dark-headings">September 29, 2025</p>
                 </div>
               </div>
+
+              <div
+                class="border-b border-dashed border-gray-200 pb-4 flex items-start gap-3  rounded-lg p-2 transition">
+                <div class="text-primary dark:text-dark-headings text-2xl"><i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <div>
+                  <a href="#" class="text-gray-800 font-medium dark:text-secondary transition">
+                    Activities at SSIFS in August 2025
+                    <i class="fa-regular fa-file-pdf text-primary dark:text-dark-headings ml-1"></i>
+                  </a>
+                  <p class="text-sm text-primary mt-1 dark:text-dark-headings">August 31, 2025</p>
+                </div>
+              </div>
             </div>
 
             <div class="mt-6 text-right">
@@ -596,7 +667,8 @@
 
             <!-- Important Links -->
             <div class="bg-white  dark:bg-dark-primary rounded-2xl shadow-lg p-6 border border-gray-100">
-              <h3 class="text-xl font-semibold text-primary mb-4 border-b border-blue-200 dark:text-dark-headings pb-2">
+              <h3
+                class="text-xl font-semibold text-primary mb-4 border-b border-b-blue-200 dark:text-dark-headings pb-2">
                 Important Links</h3>
               <ul class="space-y-3 text-primary dark:text-dark-headings font-medium">
                 <li class="flex items-center gap-2 hover:text-primary transition">
@@ -613,10 +685,8 @@
           </div>
         </div>
       </aside>
-
       <section class="mx-auto py-12">
         <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Video Gallery</h2>
-
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Card 1 -->
           <div class="video-thumbnail h-[300px] relative rounded-xl overflow-hidden shadow-lg cursor-pointer group"
@@ -668,33 +738,19 @@
               </div>
             </div>
             <div class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/60 to-transparent p-4">
-
               <p class="text-white text-md font font-semibold">Induction Training Program of IFS Officer Trainees</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Modal -->
-      <div id="videoModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm">
-        <div class="relative w-11/12 max-w-4xl mx-auto bg-secondary" onclick="event.stopPropagation()">
-          <header class="bg-primary h-14 flex items-center justify-around relative">
-            <button id="closeBtn"
-              class="absolute top-1 cursor-pointer right-0 mr-2 font-semibold text-white text-4xl">&times;</button>
-          </header>
-          <video height="400" id="videoFrame" class="w-full md:h-80 rounded-lg" preload="metadata" controls
-            controlslist="nodownload" oncontextmenu="return false;">
-            <source src="" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-      <div class="swiper clientSwiper  mx-auto ">
-        <div class="swiper-wrapper py-12 ">
+
+      <div class="swiper clientSwiper  mx-auto  dark:bg-dark-primary">
+        <div class="swiper-wrapper py-12 dark:bg-dark-primary ">
 
           <!-- 12 SLIDES -->
-          <div class="swiper-slide logo-container ">
-            <img src="/src/assets/1.png" class=" rounded-xl  logo-img" />
+          <div class="swiper-slide logo-container dark:bg-dark-primary">
+            <img src="/src/assets/1.png" class=" rounded-xl  logo-img dark:bg-dark-primary" />
           </div>
           <div class="swiper-slide logo-container">
             <img src="/src/assets/2.png" class=" rounded-xl  logo-img" />
@@ -704,9 +760,6 @@
           </div>
           <div class="swiper-slide logo-container">
             <img src="/src/assets/4.png" class=" rounded-xl  logo-img" />
-          </div>
-          <div class="swiper-slide logo-container">
-            <img src="/src/assets/5.png" class=" rounded-xl  logo-img" />
           </div>
           <div class="swiper-slide logo-container">
             <img src="/src/assets/6.png" class=" rounded-xl  logo-img" />
@@ -740,79 +793,138 @@
   </main>
 
 
-  <footer class="bg-primary dark:bg-dark-headings text-white py-10">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+  <footer class="bg-primary  text-white">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
 
-      <!-- 🔹 Column 1: About -->
+      <!-- 🔹 COLUMN 1: Image + About -->
       <div>
-        <h3 class="text-xl font-semibold mb-4">About Us</h3>
-        <p class="text-sm text-gray-300 leading-relaxed dark:text-secondary">
-          We are committed to providing world-class education and fostering global cooperation.
-          Our mission is to create future leaders through knowledge and innovation.
+        <img src="/src/assets/White-Logo.png " alt="Institute Logo" class="w-32 mb-4">
+        <p class="text-sm text-gray-300 dark:text-secondary leading-relaxed">
+          Sushma Swaraj Institute of Foreign Service (SSIFS) was established in 1986 by the Ministry of External Affairs
         </p>
       </div>
 
-      <!-- 🔹 Column 2: Quick Links -->
-      <div>
-        <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:text-blue-300 transition">Home</a></li>
-          <li><a href="#" class="hover:text-blue-300 transition">About</a></li>
-          <li><a href="#" class="hover:text-blue-300 transition">Courses</a></li>
-          <li><a href="#" class="hover:text-blue-300 transition">Contact</a></li>
+      <!-- 🔹 COLUMN 2: Left Menu Group -->
+      <div style="margin-left: 50px;">
+        <h3 class="text-lg font-semibold mb-4">About Institute</h3>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="#" class="hover:text-blue-300 transition">About Institute</a></li>
+          <li><a href="#" class="hover:text-blue-300 transition">Training Programs</a></li>
+          <li><a href="#" class="hover:text-blue-300 transition">Institutional Cooperation</a></li>
+          <li><a href="#" class="hover:text-blue-300 transition">Hall of Honor</a></li>
         </ul>
       </div>
 
-      <!-- 🔹 Column 3: Contact -->
-      <div>
-        <h3 class="text-xl font-semibold mb-4">Contact</h3>
-        <ul class="space-y-2 text-sm ">
-          <li class="flex items-center gap-2">
-            <i class="fa-solid fa-location-dot text-blue-300"></i>
-            <span>123 Global Street, New Delhi, India</span>
-          </li>
-          <li class="flex items-center gap-2">
-            <i class="fa-solid fa-phone text-blue-300"></i>
-            <span>+91 98765 43210</span>
-          </li>
-          <li class="flex items-center gap-2">
-            <i class="fa-solid fa-envelope text-blue-300"></i>
-            <span>info@ssifs.edu</span>
-          </li>
+      <!-- 🔹 COLUMN 3: Right Menu Group -->
+      <div style="margin-left: 50px; margin-top: 40px;">
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="#" class="hover:text-blue-300 transition">Newsletter</a></li>
+          <li><a href="#" class="hover:text-blue-300 transition">RTI</a></li>
+          <li><a href="#" class="hover:text-blue-300 transition">Useful Links</a></li>
+          <li><a href="#" class="hover:text-blue-300 transition">Tenders</a></li>
         </ul>
+      </div>
+
+      <!-- 🔹 COLUMN 4: Contact Details -->
+      <div style="margin-left: 50px;">
+        <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+
+        <ul class="space-y-3 text-sm text-gray-300">
+
+          <!-- ADDRESS -->
+          <li class="flex gap-4 items-center">
+            <i class="fa-solid fa-location-dot text-white text-lg"></i>
+            <a href="#" target="_blank" class="hover:text-blue-300 transition">
+              Baba Gang Nath Marg,<br>
+              Old JNU Campus,<br>
+              New Delhi - 110067 India
+            </a>
+          </li>
+
+          <!-- PHONE NUMBERS -->
+          <li class="flex gap-4 items-center">
+            <i class="fa-solid fa-phone text-white text-lg"></i>
+            <span class="flex flex-col">
+              <a href="tel:26181280" class="hover:text-blue-300 transition">26181280</a>
+            </span>
+          </li>
+
+          <!-- EMAIL -->
+          <li class="flex gap-4 items-center">
+            <i class="fa-solid fa-envelope text-white text-lg"></i>
+            <a href="mailto:deanfsi@mea.gov.in" class="hover:text-blue-300 transition">
+              deanfsi@mea.gov.in
+            </a>
+          </li>
+
+
+        </ul>
+
       </div>
 
     </div>
 
-    <!-- 🔹 Divider -->
-    <div class="border-t border-blue-800 mt-10 pt-6 dark:text-secondary text-center text-sm text-gray-400">
-      © 2025 SSIFS. All Rights Reserved.
+    <!-- 🔹 Footer Bottom -->
+    <div class="border-t border-blue-800 mt-10 pt-6 text-center md:text-left text-sm text-gray-300 dark:text-secondary">
+
+      <div class="max-w-7xl mx-auto px-6 flex lg:flex-row md:flex-row flex-col justify-between items-center gap-2">
+
+        <!-- LEFT -->
+        <span>
+          Website last updated on: <strong>05 November, 2025</strong>
+        </span>
+
+        <!-- RIGHT -->
+        <span>
+          Visitors: <strong>435866</strong>
+        </span>
+
+      </div>
+
+      <!-- COPYRIGHT (centered always) -->
+      <div class="border-t border-blue-800  pt-6 text-center md:text-left text-sm text-gray-300 dark:text-secondary"
+        style="margin-top: 20px;">
+        <div class="mx-auto px-6 text-center gap-2">
+
+
+
+          <!-- RIGHT -->
+          <span>
+            © Content Owned by Sushma Swaraj Institute of Foreign Service
+          </span>
+
+        </div>
+      </div>
     </div>
+
   </footer>
 
+  <button id="scrollTopBtn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
-  <!-- 
-  <div class="social-container text-dark-headings dark:text-dark-headings" id="socialContainer">
-    <div class="social-links ">
-      <a href="https://instagram.com" target="_blank" class="dark:bg-dark-primary bg-secondary"><i
-          class="fab fa-instagram" style="color:#E4405F"></i></a>
-      <a href="https://youtube.com" target="_blank" class="dark:bg-dark-primary bg-secondary"><i class="fab fa-youtube"
-          style="color:#FF0000"></i></a>
-      <a href="https://x.com" target="_blank" class="dark:bg-dark-primary bg-secondary"><i
-          class="fab fa-x-twitter dark:text-secondary text-dark-primary"></i></a>
+
+  <!-- Modal -->
+  <div id="videoModal"
+    class="fixed rounded-lg overflow-hidden inset-0 z-999 hidden items-center justify-center bg-black/80 backdrop-blur-sm">
+    <div class="relative w-11/12 rounded-lg max-w-4xl mx-auto bg-secondary" onclick="event.stopPropagation()">
+      <header class="bg-primary rounded-t-lg h-14 flex items-center justify-around relative">
+        <button id="closeBtn"
+          class="absolute top-1 cursor-pointer right-0 mr-2 font-semibold text-white text-4xl">&times;</button>
+      </header>
+      <video height="400" id="videoFrame" class="w-full md:h-80 rounded-lg" preload="metadata" controls
+        controlslist="nodownload" oncontextmenu="return false;">
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
-    <button class="main-btn  dark:border-secondary shadow-2xl border border-gray-200 bg-secondary dark:bg-dark-primary"
-      id="mainBtn">
-      <i class="fas fa-share-alt text-dark-primary dark:text-secondary"></i>
-    </button>
-  </div> -->
+  </div>
 
 
-
-  <!-- <div id="custom-cursor" class="hidden md:block"> -->
-  <!-- <div class="cursor-core"></div> -->
-  <!-- <div class="cursor-ring"></div> -->
-  <!-- </div> -->
+  <div id="custom-cursor" class="hidden md:block">
+    <div class="cursor-core"></div>
+    <div class="cursor-ring"></div>
+  </div>
 
 
 
@@ -821,6 +933,45 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        scrollBtn.classList.add("show");
+      } else {
+        scrollBtn.classList.remove("show");
+      }
+    });
+
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const options = {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        timeZone: 'Asia/Kolkata'
+      };
+      document.getElementById("currentTime").textContent =
+        now.toLocaleString("en-US", options) + " IST";
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime();
+  </script>
 </body>
 
 </html>
